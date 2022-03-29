@@ -170,6 +170,5 @@ a:visited {
     color: rgb(0, 0, 0);
     padding: 15px 0 10px;
     font-family: inherit;
-    outline-color: oranges;
-    border-radius: 5%;
+    outline-color: orange;
 }
