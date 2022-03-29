@@ -7,84 +7,108 @@
     <meta name="keywords" content="резюме, resume, cv">
     <meta name="description" content="Резюме - Ирина Мельникова">
     <title>Резюме: Мельникова И.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
 </head>
 <body>
 
- <img src="Imgs/Аватарка.jpg" width="190" alt="Здесь размещена аватарка">
- 
- <h1> Ирина Мельникова</h1>
+<div class="container">
 
- <p>В настоящее время я <strong> специалист по договорной работе</strong>  в строительном отделе. Имею огромное желание освоить <strong> программирование </strong> и сменить профессию. </p>
+    <div class="info">
+        <img src="Imgs/Аватарка.jpg" alt="Здесь размещено фото моего кота" class="avatar">
+    
+        <div class="info-1">
+            <div class="name">
+                <h1> Ирина Мельникова</h1>
+            </div>
+                <p>В настоящее время я <strong> специалист по договорной работе</strong>  в строительном отделе. Имею огромное желание освоить <strong> программирование </strong> и сменить профессию. </p>
 
- <p>Я люблю <em> проводить время со своей семьёй, изучать новое, читать</em>.</p>
+                <p>Я люблю <em> проводить время со своей семьёй, изучать новое, читать</em>.</p>
+        </div>
+       
 
- <h3><p><strong>Список социальных сетей:</strong></p></h3>
-
- <a href="https://vk.com/id730462"target="_blank">ВКОНТАКТЕ</a>
- |
- <a href="https://instagram.com/iraelochka"target="_blank">Instagram</a>
-
- <h3><p><strong>Мои хобби:</strong></p></h3>
- <ul>
-     <li>Путешествия</li>
-     <li>Книги</li>
-     <li>Кино</li>     
- </ul>
-
- <h3><p><strong>Опыт работы:</strong></p></h3>
-<table>
-    <thead>
-    <tr>
-        <th>Название организации</th>
-        <th>Должность</th>
-        <th>Год</th>  
-    </tr>
-    </thead>
-
-    <tbody>
-    <tr>
-        <td>ООО "Сонет текнолоджис СПб"</td>
-        <td>Помощник главного бухгалтера</td>
-        <td>2011-2012</td>
-    </tr>
-
-    <tr>
-        <td>ОАО "Кировский завод"</td>
-        <td>Экономист</td>
-        <td>2013-2016</td>
-    </tr>
-
-    <tr>
-        <td>ООО "Лента"</td>
-        <td>Специалист по договорной работе</td>
-        <td>2016 - по н.в.</td>
-    </tr>
-    </tbody>
-</table>
-
-<h3><p><strong>Связаться со мной</strong></p></h3>
-
-<form>
-
-    <div>
-        <label for="text">Ваше имя:</label>
-        <input type="text" id="text" placeholder="Введите имя">
     </div>
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
+    <div class="card bg-yellow">
+        <h3><p><strong>Список социальных сетей:</strong></p></h3>
+
+            <a href="https://vk.com/id730462"target="_blank">ВКОНТАКТЕ</a>
+            |
+            <a href="https://instagram.com/iraelochka"target="_blank">Instagram</a>
     </div>
 
-    <div>
-        <label for="окно">Ваше сообщение:</label>
-        <br>
-        <textarea id="окно" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+    <div class="card bg-red">
+        <h3><p><strong>Мои хобби:</strong></p></h3>
+
+            <ul class="list">
+                <li>Путешествия</li>
+                <li>Книги</li>
+                <li>Кино</li>     
+            </ul>
     </div>
 
-    <input type="submit" value="Отправить!">
+    <div class="card bg-green">
+        <h3><p><strong>Опыт работы:</strong></p></h3>
 
-</form>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Название организации</th>
+                    <th>Должность</th>
+                    <th>Год</th>  
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>ООО "Сонет текнолоджис СПб"</td>
+                    <td>Помощник главного бухгалтера</td>
+                    <td>2011-2012</td>
+                </tr>
+
+                <tr>
+                    <td>ОАО "Кировский завод"</td>
+                    <td>Экономист</td>
+                    <td>2013-2016</td>
+                </tr>
+
+                <tr>
+                    <td>ООО "Лента"</td>
+                    <td>Специалист по договорной работе</td>
+                    <td>2016 - по н.в.</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+        
+        <form action="/" class="form">
+            <h3><p><strong>Связаться со мной</strong></p></h3>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="text">Ваше имя:</label>
+                    <input type="text" id="text" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="окно">Ваше сообщение:</label>
+                
+                <textarea id="окно" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Отправить!">
+
+        </form>
+</div>
 
 </body>
 </html>

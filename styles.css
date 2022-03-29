@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+font-size: 16px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+letter-spacing: 0,5px;
+color: rgb(14, 30, 108);
+background: rgb(217, 228, 238)
+}
+
+a {
+    color:rgb(14, 30, 108)
+}
+
+a:hover {
+    color:red;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar {
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, .25);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-1 {
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.info-1 p {
+    font-style: italic;
+    /* font-weight: bold; */
+    color: rgb(15, 48, 37);
+    margin: 20;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info-1 {
+        margin-top: 10px;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 18px;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+    margin-top: 20px;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.btn {
+    background: palevioletred;
+    padding: 15px 20px;
+    color: rgb(53, 53, 50);
+    border: darkred;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: .9;
+    color: white;
+}
+
+.list {
+    padding: 0 30px;
+}
+
+.list li{
+    color:blue;
+    margin-bottom: 8px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 6px;
+}
+
+.table th {
+    padding-bottom: 10px;
+    color: rgb(5, 53, 39);
+}
+
+.table td:nth-child(1) {
+    color: rgb(127, 111, 111);
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px; 
+    width: 50%;   
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        margin-right: 0; 
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: darkslategray
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: #f3e7d1;
+    border-bottom: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+    padding: 15px 0 10px;
+    font-family: inherit;
+    outline-color: oranges;
+}
